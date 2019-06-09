@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:background="@drawable/favoritebga"
+        tools:context=".Read">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="74dp">
+        <TextView
+                android:text="R e a d  T i p"
+                android:gravity="center"
+                android:fontFamily="@font/flowerroad"
+                android:textSize="50sp"
+                android:layout_width="match_parent"
+                android:layout_height="94dp" android:id="@+id/textView9" />
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp" android:id="@+id/btnFavoriteReadBack"
+                android:background="@drawable/backwhite" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView
+                android:text="카테고리"
+                android:fontFamily="@font/nanumgothic"
+                android:background="@drawable/line"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_width="111dp"
+                android:layout_height="match_parent" android:id="@+id/textView5"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <TextView
+                android:layout_width="258dp"
+                android:gravity="center"
+                android:fontFamily="@font/nanumgothic"
+                android:background="@drawable/line"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" android:id="@+id/readFavoriteCategory"
+                android:hint="카테고리가 표시됩니다."/>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView
+                android:text="제목"
+                android:fontFamily="@font/nanumgothic"
+                android:background="@drawable/line"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_width="111dp"
+                android:gravity="center"
+                android:layout_height="match_parent" android:id="@+id/textView7"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <TextView
+                android:layout_width="258dp"
+                android:gravity="center"
+                android:fontFamily="@font/nanumgothic"
+                android:background="@drawable/line"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_height="match_parent" android:id="@+id/readFavoriteSubject"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" android:hint="제목이 표시됩니다."/>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+        <TextView
+                android:layout_width="390dp"
+                android:layout_height="390dp"
+                android:background="@drawable/line"
+                android:inputType="textMultiLine"
+                android:textSize="18sp"
+                android:ems="10"
+                android:padding="20dp"
+                android:gravity="start"
+                android:id="@+id/txtFavoriteTxt" android:hint="이곳에 내용이 표시됩니다."
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

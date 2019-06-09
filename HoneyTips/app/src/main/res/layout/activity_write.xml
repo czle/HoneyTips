@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:background="@drawable/writebg"
+        tools:context=".Write">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp">
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView
+                android:text="W r i t e   T i p"
+                android:fontFamily="@font/tvnbold"
+                android:gravity="center"
+                android:textSize="50dp"
+                android:layout_width="255dp"
+                android:layout_height="match_parent" android:id="@+id/textView2" android:layout_weight="1"/>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+        <Button
+                android:layout_width="40dp"
+                android:fontFamily="@font/nanumgothic"
+                android:layout_height="40dp" android:id="@+id/btnBack" android:background="@drawable/backwhite"/>
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button
+                android:layout_width="40dp"
+                android:fontFamily="@font/nanumgothic"
+                android:layout_height="40dp" android:id="@+id/btnInitional"
+                android:background="@drawable/refreshwhite"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        />
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1"/>
+        <Button
+                android:layout_width="40dp"
+                android:fontFamily="@font/nanumgothic"
+                android:layout_height="40dp" android:id="@+id/btnSave"
+                android:background="@drawable/pencilwhite"/>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:text="카테고리"
+                android:gravity="center"
+                android:background="@drawable/line"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/nanumgothic"
+                android:layout_width="111dp"
+                android:layout_height="match_parent" android:id="@+id/textView"/>
+        <Spinner
+                android:layout_width="258dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:background="@drawable/line"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:gravity="end"
+                android:ems="10"
+                android:fontFamily="@font/nanumgothic"
+                android:id="@+id/SpinnerCategory"
+                android:spinnerMode="dropdown"/>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" android:layout_weight="2"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:text="제목"
+                android:layout_width="111dp"
+                android:background="@drawable/line"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_height="match_parent" android:id="@+id/textView3"
+                android:fontFamily="@font/nanumgothic"/>
+        <EditText
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:background="@drawable/line"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:ems="10"
+                android:fontFamily="@font/nanumgothic"
+                android:id="@+id/editSubject" android:hint="제목을 입력해주세요"/>
+        <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+
+            android:layout_height="391dp" android:id="@+id/LineA">
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/line"
+                android:layout_height="match_parent">
+
+            <MultiAutoCompleteTextView
+                    android:layout_width="390dp"
+                    android:layout_height="390dp"
+                    android:background="@drawable/line"
+                    android:gravity="start"
+                    android:fontFamily="@font/nanumgothic"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:textSize="18sp"
+                    android:padding="20dp"
+                    android:id="@+id/editWrite"
+                    android:hint="내용을 적어주세요"
+                    android:imeOptions="flagNoEnterAction"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+</LinearLayout>

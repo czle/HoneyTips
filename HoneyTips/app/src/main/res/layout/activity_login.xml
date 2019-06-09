@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="86dp"/>
+    <TextView
+            android:text="로그인 하긔"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView10"/>
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="103dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:hint="아이디를 입력해주세요"
+            android:id="@+id/ID_EditTxt"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:hint="비밀번호를 입력해주세요"
+            android:id="@+id/PW_EditTxt"/>
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="103dp"/>
+    <Button
+            android:text="로그인 하기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btnLogin"/>
+    <Button
+            android:text="회원가입 하기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btnSignIn"/>
+    <Button
+            android:text="비밀번호 찾기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/btnFindPW"/>
+</LinearLayout>

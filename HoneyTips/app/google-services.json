@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "559636467013",
+    "firebase_url": "https://honeytips-e8bd9.firebaseio.com",
+    "project_id": "honeytips-e8bd9",
+    "storage_bucket": "honeytips-e8bd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559636467013:android:d70a2354c65fbd67",
+        "android_client_info": {
+          "package_name": "com.example.honeytips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559636467013-jgqrjfk3n3j6tnl95iirebpp2r3q1khe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6Z0wPPs9wDcX71Q4mnux4gRdFhjySc6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559636467013-jgqrjfk3n3j6tnl95iirebpp2r3q1khe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

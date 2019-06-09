@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Menu"
+        android:background="@drawable/readbg">
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:visibility="invisible"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="171dp" android:visibility="visible">
+        <Space
+                android:layout_width="79dp"
+                android:layout_height="138dp" android:visibility="invisible"/>
+        <ImageView
+                android:layout_width="256dp"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/home" android:id="@+id/imageView"
+                android:visibility="invisible"/>
+        <Space
+                android:layout_width="133dp"
+                android:layout_height="140dp" android:layout_weight="1" android:visibility="invisible"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="161dp">
+        <Space
+                android:layout_width="58dp"
+                android:layout_height="match_parent" android:layout_weight="1" android:visibility="visible"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/btnWrite"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        app:lottie_rawRes="@raw/write"
+                        app:lottie_autoPlay="false"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" android:visibility="invisible"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/btnRead"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        app:lottie_rawRes="@raw/read"
+                        app:lottie_autoPlay="false"
+                        app:layout_constraintTop_toTopOf="parent" android:visibility="invisible"
+                        app:layout_constraintStart_toEndOf="@+id/btnWriteNull"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <Button
+                        android:layout_width="165dp"
+                        android:layout_height="165dp" android:id="@+id/btnReadnull"
+                        android:background="@drawable/nullnull" android:visibility="visible"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btnWrite"/>
+                <Button
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:id="@+id/btnWriteNull"
+                        android:background="@drawable/nullnull" app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1" android:visibility="visible"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Space
+                android:layout_width="58dp"
+                android:layout_height="wrap_content" android:layout_weight="1" android:visibility="visible"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="165dp" android:layout_weight="1">
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/btnFavorite"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:visibility="invisible"
+                        app:lottie_rawRes="@raw/favoritea"
+                        app:lottie_autoPlay="false" app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/btnFAQ"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:visibility="invisible"
+                        app:lottie_rawRes="@raw/email"
+                        app:layout_constraintStart_toEndOf="@+id/btnFavorite"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                <Button
+                        android:layout_width="165dp"
+                        android:layout_height="165dp" android:id="@+id/btnFavoriteNull"
+                        android:background="@drawable/nullnull"
+                        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+                        android:visibility="visible"/>
+                <Button
+                        android:layout_width="165dp"
+                        android:layout_height="165dp" android:id="@+id/btnFAQNull"
+                        android:background="@drawable/nullnull"
+                        android:visibility="visible"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btnFavorite"/>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+        <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1" android:visibility="visible"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="27dp" android:layout_weight="1" android:visibility="visible"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="41dp" app:srcCompat="@drawable/crea" android:id="@+id/imageView2"
+                android:layout_weight="1" android:visibility="invisible"/>
+    </LinearLayout>
+</LinearLayout>
